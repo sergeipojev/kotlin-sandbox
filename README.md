@@ -1,7 +1,7 @@
 # Kotlin Sandbox
 
 Given project was created to show the possibilities of Kotlin and to be able to try out Kotlin.
-Project includes MongoDb, Rest Controllers, Models, Services, Repositories, WebClient and RestTemplate to communicate with external API.
+Project includes Togglz, MongoDb, Rest Controllers, Models, Services, Repositories, WebClient and RestTemplate to communicate with external API.
 Just for example I was using Formula 1 public API to retrieve the data from the network.
 
 ### Formula 1 API
