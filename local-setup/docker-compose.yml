@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: f1fanclub_mongo
+    environment:
+      - MONGO_INITDB_DATABASE=f1fanclub
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    ports:
+      - "27017:27017"
+    volumes:
+      - f1fanclub-data:/data/db
+      - f1fanclub-data:/data/configdb
+      - ./docker_mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+volumes:
+  f1fanclub-data:

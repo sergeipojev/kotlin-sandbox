@@ -1,0 +1,41 @@
+server:
+  port: 8080
+spring:
+  data:
+    mongodb:
+      host: localhost
+      password: root
+      username: root
+      port: 27017
+      database: f1fanclub
+      authentication-database: admin
+logging:
+  level:
+    root: info
+togglz:
+    enabled: true
+    features:
+      USE_NETWORK:
+        enabled: false
+    console:
+        enabled: true
+        path: /togglz-console
+        use-management-port: false
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+app:
+  togglz:
+    mongo:
+      enabled: false
+    file:
+      enabled: true
+  api:
+    baseUrl:
+      f1: http://ergast.com/api/f1
+  config:
+    f1:
+      data-source: webclient # or mongo or resttemplate
